@@ -1,7 +1,5 @@
-export const errorHandler = (error, req, res, next) => {
-  const { status = 500, message } = error;
-  res.status(status).json({
-    status,
-    message,
+export const notFoundHandler = (req, res) => {
+  res.status(404).json({
+    message: `${req.url} not ffound`,
   });
 };
