@@ -12,16 +12,17 @@ const contactSchema = new Schema(
     },
     email: {
       type: String,
-      required: true,
+      default: null,
+      required: false,
     },
-    isFavorite: {
+    isFavourite: {
       type: Boolean,
       default: false,
       required: true,
     },
     contactType: {
       type: String,
-      enum: ['work', 'personal', 'home'],
+      enum: ['personal', 'home', 'work'],
       default: 'personal',
       required: true,
     },
@@ -32,6 +33,6 @@ const contactSchema = new Schema(
   },
 );
 
-const contactsCollection = model('contact', contactSchema);
+const ContactCollection = model('contact', contactSchema);
 
-export default contactsCollection;
+export default ContactCollection;
