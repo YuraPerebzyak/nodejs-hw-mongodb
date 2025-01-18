@@ -7,5 +7,3 @@ const boostrap = async () => {
 };
 
 boostrap();
-// gbaqDM3OC3qzLDen
-// cluster0.cauyo.mongodb.net
