@@ -8,10 +8,14 @@ import {
   contactAddSchema,
   contactUpdateSchema,
 } from '../validation/contacts.js';
+
 import { isValidId } from '../middlewares/isValidId.js';
+import { authenticate } from '../middlewares/authenticate.js';
 
 // const app = express();
 const contactsRouter = Router();
+
+contactsRouter.use(authenticate);
 
 contactsRouter.get('/', ctrlWrapper(contactsController.getHomePageController));
 
