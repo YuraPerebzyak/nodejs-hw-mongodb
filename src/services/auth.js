@@ -12,8 +12,8 @@ import { SMTP, TEMPLATES_DIR } from '../constants/index.js';
 import { getEnvVar } from '../utils/getEnvVar.js';
 import { sendEmail } from '../utils/sendMail.js';
 
-import UserCollection from '../db/models/user.js';
-import SessionCollection from '../db/models/session.js';
+import UserCollection from '../db/models/User.js';
+import SessionCollection from '../db/models/Session.js';
 import {
   accessTokenLifetime,
   refreshTokenLifetime,

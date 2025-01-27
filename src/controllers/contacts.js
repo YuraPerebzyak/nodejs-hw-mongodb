@@ -11,7 +11,7 @@ import { getEnvVar } from '../utils/getEnvVar.js';
 import { deleteFileFromCloudinary } from '../utils/deleteFileFromCloudinary.js';
 import { extractFileIdFromCloudinary } from '../utils/extractFileIdFromCloudinary.js';
 
-import { sortByList } from '../db/models/contact.js';
+import { sortByList } from '../db/models/Contact.js';
 
 export const getHomePageController = (req, res) => {
   res.send('<h1>Home Page</h1>');
