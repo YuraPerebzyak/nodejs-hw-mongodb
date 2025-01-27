@@ -1,4 +1,4 @@
-import ContactCollection from '../db/models/Contact.js';
+import ContactCollection from '../db/models/сontact.js';
 
 import { calcPaginationData } from '../utils/calcPaginationData.js';
 
